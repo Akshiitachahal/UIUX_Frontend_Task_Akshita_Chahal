@@ -1,0 +1,76 @@
+/* ============================================================
+   PAGES: LOGIN + DASHBOARD (Hub app shell)
+   ============================================================ */
+
+/* ---------- Login split screen ---------- */
+.login-page{display:grid;grid-template-columns:43.5% 1fr;min-height:100vh;background:var(--dark-800);color:#fff}
+.login-visual{position:relative;overflow:hidden;display:flex;flex-direction:column;justify-content:space-between;padding:56px 56px 64px}
+.login-visual .bg{position:absolute;inset:0;background:url('https://images.pexels.com/photos/36423740/pexels-photo-36423740.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1400&w=900') center/cover no-repeat;filter:grayscale(45%)}
+.login-visual .overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,12,16,.55),rgba(10,12,16,.85))}
+.login-visual .logo,.login-visual .bottom{position:relative}
+.login-visual h2{font-size:44px;font-weight:800;letter-spacing:-.02em;line-height:1.15;max-width:340px}
+.login-visual .bottom p{margin-top:20px;color:var(--text-on-dark);font-size:14.5px;line-height:1.65;max-width:420px}
+
+.login-form-col{display:flex;align-items:center;justify-content:center;padding:64px 40px}
+.login-form{width:100%;max-width:440px}
+.login-form h1{font-size:36px;font-weight:800;letter-spacing:-.02em}
+.login-form .sub{margin-top:10px;color:var(--text-on-dark-dim);font-size:14px}
+.field{margin-top:28px}
+.field .lbl-row{display:flex;align-items:center;justify-content:space-between}
+.field label{font-size:var(--fs-tiny);font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--text-on-dark-dim)}
+.field input{width:100%;margin-top:10px;background:var(--dark-750);border:1px solid var(--dark-border-2);border-radius:var(--radius-sm);color:#fff;font-family:var(--font);font-size:14px;padding:13px 15px;outline:none;transition:border-color .15s}
+.field input:focus{border-color:var(--blue)}
+.check-row{margin-top:24px;display:flex;align-items:center;gap:10px;font-size:13.5px;color:var(--text-on-dark)}
+.check-row input{width:16px;height:16px;accent-color:var(--blue)}
+.login-form .btn-blue{width:100%;margin-top:32px;padding:14px;font-size:14px}
+.guest{display:block;text-align:center;margin-top:22px;color:var(--text-on-dark);font-size:13.5px;transition:color .15s}
+.guest:hover{color:#fff}
+.login-divider{margin-top:28px;border-top:1px solid var(--dark-border-2)}
+.signup-row{margin-top:28px;text-align:center;font-size:13.5px;color:var(--text-on-dark-dim)}
+
+/* ---------- Dashboard shell ---------- */
+.dash{display:grid;grid-template-columns:240px 1fr;min-height:100vh;background:#0b0d11;color:#fff}
+.dash-side{background:#0a0c10;border-right:1px solid var(--dark-border);display:flex;flex-direction:column;padding:28px 24px}
+.dash-side .logo{font-size:16px}
+.dash-nav{margin-top:88px;display:flex;flex-direction:column;gap:6px}
+.dash-nav a{font-size:15px;font-weight:800;letter-spacing:.03em;text-transform:uppercase;color:#fff;padding:12px 10px;border-radius:var(--radius-sm);transition:background .15s}
+.dash-nav a:hover,.dash-nav a.active{background:var(--dark-750)}
+.dash-side .spacer{flex:1}
+.dash-foot{display:flex;flex-direction:column;gap:6px;padding-bottom:8px}
+.dash-foot a{font-size:14px;font-weight:800;letter-spacing:.03em;text-transform:uppercase;color:#fff;padding:11px 10px;border-radius:var(--radius-sm);transition:background .15s}
+.dash-foot a:hover{background:var(--dark-750)}
+
+.dash-main{display:flex;flex-direction:column;min-width:0}
+.dash-top{height:74px;background:var(--dark-750);border-bottom:1px solid var(--dark-border);display:flex;align-items:center;justify-content:space-between;padding:0 32px}
+.dash-top .srch{font-size:16px;font-weight:800;letter-spacing:.06em}
+.dash-top .user{display:flex;align-items:center;gap:12px;font-size:16px;font-weight:800;letter-spacing:.04em}
+.dash-body{padding:36px 32px 64px;max-width:1200px;width:100%}
+.dash-body h1{font-size:20px;font-weight:800;letter-spacing:.03em;text-transform:uppercase}
+.dash-body .sub{margin-top:14px;font-size:14px;font-weight:700;letter-spacing:.03em;text-transform:uppercase;color:var(--text-on-dark)}
+
+/* Continue-learning card */
+.continue-card{margin-top:28px;background:var(--dark-750);border:1px solid var(--dark-border);border-radius:var(--radius);padding:28px;display:grid;grid-template-columns:1fr auto;gap:32px;align-items:end}
+.continue-card .l1{font-size:12px;font-weight:800;letter-spacing:.06em;text-transform:uppercase}
+.continue-card .l2{margin-top:10px;font-size:13px;font-weight:800;letter-spacing:.04em;text-transform:uppercase}
+.continue-card .l3{margin-top:10px;font-size:13px;font-weight:800;letter-spacing:.04em;text-transform:uppercase}
+.prog-row{margin-top:16px;display:flex;align-items:center;gap:16px}
+.prog-track{flex:1;max-width:500px;height:10px;background:#565b64;border-radius:2px;overflow:hidden}
+.prog-fill{height:100%;width:68%;background:var(--blue)}
+.prog-pct{font-size:14px;font-weight:800}
+.btn-teal{background:#1899b2;color:#fff;font-size:12px;font-weight:800;letter-spacing:.04em;text-transform:uppercase;padding:13px 20px;border-radius:var(--radius-sm);transition:background .15s}
+.btn-teal:hover{background:#14859b}
+
+/* Courses / events / activity */
+.dash-h2{margin-top:48px;font-size:18px;font-weight:800;letter-spacing:.03em;text-transform:uppercase}
+.dash-courses{margin-top:20px;display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.dash-course{background:var(--dark-750);border:1px solid var(--dark-border);border-radius:var(--radius-sm);min-height:180px;padding:24px;font-size:12.5px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--text-on-dark);transition:border-color .15s}
+.dash-course:hover{border-color:var(--dark-border-2)}
+.dash-bottom{margin-top:52px;display:grid;grid-template-columns:1fr 1fr;gap:64px}
+.dash-event{background:var(--dark-750);border:1px solid var(--dark-border);border-radius:var(--radius-sm);padding:20px 22px;margin-top:20px;transition:border-color .15s}
+.dash-event:hover{border-color:var(--dark-border-2)}
+.dash-event h4{font-size:13px;font-weight:800;letter-spacing:.04em;text-transform:uppercase}
+.dash-event .meta{margin-top:8px;font-size:12px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--text-on-dark)}
+.dash-event a{display:inline-block;margin-top:14px;font-size:11.5px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:#fff;transition:color .15s}
+.dash-event a:hover{color:var(--blue-light)}
+.activity-list{margin-top:12px;max-width:420px}
+.activity-row{display:flex;align-items:center;justify-content:space-between;padding:14px 0;font-size:14px;font-weight:800;letter-spacing:.04em;text-transform:uppercase}

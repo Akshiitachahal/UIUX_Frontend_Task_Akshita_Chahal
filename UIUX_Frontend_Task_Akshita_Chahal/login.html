@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | DroneTV</title>
+    <meta name="description" content="DroneTV login page" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="index.html" class="brand" aria-label="DroneTV home">
+          <span class="brand-mark">D</span>
+          <span>DroneTV</span>
+        </a>
+
+        <nav class="site-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="courses.html">Courses</a>
+          <a href="login.html" class="active">Login</a>
+        </nav>
+
+        <div class="header-actions">
+          <a class="btn btn-primary" href="dashboard.html">Dashboard</a>
+          <button class="mobile-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+            ☰
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="login-page">
+      <div class="auth-shell">
+        <div class="auth-visual" aria-label="Drone media background image">
+          <img src="assets/REFERENCE.png" alt="DroneTV media and operations environment" />
+          <div class="auth-overlay"></div>
+        </div>
+
+        <div class="auth-content">
+          <div class="auth-box">
+            <div class="eyebrow">Welcome back</div>
+            <h1>Sign in</h1>
+            <p class="auth-subtitle">Access your flights, learning dashboard, and training progress.</p>
+
+            <form id="loginForm" novalidate>
+              <div class="form-group">
+                <label for="email">Email address</label>
+                <input id="email" name="email" type="email" placeholder="name@example.com" autocomplete="email" />
+              </div>
+
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input id="password" name="password" type="password" placeholder="••••••••" autocomplete="current-password" />
+              </div>
+
+              <div class="check-row">
+                <label class="check-left">
+                  <input type="checkbox" name="remember" />
+                  <span>Remember me</span>
+                </label>
+                <a href="login.html" class="secondary-link">Forgot password?</a>
+              </div>
+
+              <button type="submit" class="btn btn-primary">Login</button>
+              <div class="form-error" aria-live="polite"></div>
+            </form>
+
+            <div class="alt-login">
+              <button type="button">Continue with Google</button>
+              <button type="button">Continue with Apple</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

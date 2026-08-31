@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DroneTV Hub — The Drone Ecosystem, Connected</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<!-- System: tokens -> base -> components -> pages -> responsive -->
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/home.css">
+<link rel="stylesheet" href="css/services.css">
+<link rel="stylesheet" href="css/training.css">
+<link rel="stylesheet" href="css/auth.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<!-- =================== SITE (home / services / training) =================== -->
+<div id="site">
+
+  <!-- HOME HERO (sits above navbar, per reference) -->
+  <section class="home-hero" id="homeHero">
+    <div class="bg"></div><div class="overlay"></div>
+    <div class="home-hero-inner container">
+      <h1>The Drone Ecosystem,<br>Connected</h1>
+      <p>Discover cutting-edge technologies, connect with global commercial companies, source high-performance services, and advance your industry credentials in drone, AI, and geospatial sectors.</p>
+      <div class="cta-row">
+        <a href="#" class="btn btn-blue" data-goto="home">Explore Ecosystem</a>
+        <a href="#" class="btn btn-ghost-dark" data-goto="services">Explore Services</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stats-grid container" style="padding:0">
+          <div class="hero-stat"><div class="num">2,400+</div><div class="lbl">Technologies Listed</div></div>
+          <div class="hero-stat"><div class="num">850+</div><div class="lbl">Registered Companies</div></div>
+          <div class="hero-stat"><div class="num">340+</div><div class="lbl">Certified Professionals</div></div>
+          <div class="hero-stat"><div class="num">120+</div><div class="lbl">Expert Courses</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="navbar-inner">
+      <a href="#" class="logo" data-goto="home">DRONETV <span class="hub">HUB</span></a>
+      <button class="nav-burger" id="navBurger" aria-label="Menu">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#" data-goto="home" data-nav="home">Ecosystem</a></li>
+        <li><a href="#" data-goto="services" data-nav="services">Services</a></li>
+        <li><a href="#" data-goto="home" data-nav="companies">Companies</a></li>
+        <li><a href="#" data-goto="training" data-nav="training">Training</a></li>
+        <li><a href="#" data-goto="home" data-nav="events">Events</a></li>
+        <li><a href="#" data-goto="home" data-nav="content">Content</a></li>
+      </ul>
+      <div class="nav-right">
+        <a href="#" class="nav-search" aria-label="Search">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+        </a>
+        <a href="#" class="nav-login" data-goto="login">Login</a>
+        <a href="#" class="nav-join" data-goto="login">Join DroneTV</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+  <!-- ============ HOME VIEW ============ -->
+  <section class="view" data-view="home">
+
+    <!-- Ecosystem paths -->
+    <div class="section-light section-pad">
+      <div class="container">
+        <div class="eyebrow">Explore the Ecosystem</div>
+        <h2 class="h2">Select an industrial path to begin your search</h2>
+        <div class="grid-3" style="margin-top:44px">
+          <article class="eco-card">
+            <img src="https://images.pexels.com/photos/13310692/pexels-photo-13310692.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=420&w=760" alt="Drone technology hardware">
+            <div class="body">
+              <h3>Drone Technology</h3>
+              <div class="stat">1,200+ Solutions</div>
+              <p>Hardware innovations including advanced quadcopters, fixed-wing UAS, modular payloads, and high-frequency controllers.</p>
+              <a href="#" class="explore">Explore <span class="arrow">→</span></a>
+            </div>
+          </article>
+          <article class="eco-card">
+            <img src="https://images.pexels.com/photos/18834566/pexels-photo-18834566.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=420&w=760" alt="Artificial intelligence network">
+            <div class="body">
+              <h3>Artificial Intelligence</h3>
+              <div class="stat">480+ AI Tools</div>
+              <p>Object detection pipelines, automated flightpath systems, thermal anomaly tracking, and computer vision software suites.</p>
+              <a href="#" class="explore">Explore <span class="arrow">→</span></a>
+            </div>
+          </article>
+          <article class="eco-card">
+            <img src="https://images.pexels.com/photos/20286950/pexels-photo-20286950.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=420&w=760" alt="GIS mapping farmland aerial">
+            <div class="body">
+              <h3>GIS &amp; Mapping</h3>
+              <div class="stat">720+ Mapping Solutions</div>
+              <p>High-accuracy photogrammetry software, LiDAR point cloud generation tools, and multi-layered GIS analysis systems.</p>
+              <a href="#" class="explore">Explore <span class="arrow">→</span></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <!-- Featured content -->
+    <div class="section-dark section-pad">
+      <div class="container">
+        <div class="eyebrow">Featured Content</div>
+        <h2 class="h2">Watch expert analysis and standard updates</h2>
+        <div class="featured-grid" style="margin-top:44px">
+          <div>
+            <a href="#" class="video-thumb" style="display:block">
+              <img src="https://images.pexels.com/photos/33803478/pexels-photo-33803478.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=560&w=1100" alt="City aerial broadcast">
+              <span class="play-btn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="#fff"><path d="M8 5v14l11-7z"/></svg>
+              </span>
+            </a>
+            <div class="feat-tag">Enterprise Broadcast</div>
+            <h3 class="feat-title">The Future of BVLOS Operations: Regulations &amp; Global Benchmarks</h3>
+            <p class="feat-desc">BVLOS operations are transforming pipeline and utilities monitoring. We break down the newly revised FAA waivers and European standards.</p>
+          </div>
+          <div>
+            <article class="side-item">
+              <img src="https://images.pexels.com/photos/5514392/pexels-photo-5514392.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=220&w=350" alt="Precision agriculture">
+              <div>
+                <div class="tag">Agricultural Tech</div>
+                <h4>LiDAR in Precision Agriculture: Optimizing Yield &amp; Soil Data</h4>
+                <div class="pub">Published by GeoAgri Solutions</div>
+              </div>
+            </article>
+            <article class="side-item">
+              <img src="https://images.pexels.com/photos/37143616/pexels-photo-37143616.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=220&w=350" alt="Fleet management">
+              <div>
+                <div class="tag">Fleet Operations</div>
+                <h4>Enterprise Fleet Management: Scaling from 5 to 500 Active Airframes</h4>
+                <div class="pub">Published by FleetManager AI</div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Companies -->
+    <div class="section-light section-pad">
+      <div class="container">
+        <div class="section-head-row">
+          <div>
+            <div class="eyebrow">Companies</div>
+            <h2 class="h2">Connect directly with verified market-<br>leading innovators</h2>
+          </div>
+          <a href="#" class="link-blue">View all 850+ companies →</a>
+        </div>
+        <div class="grid-4" style="margin-top:44px">
+          <article class="company-card">
+            <div class="monogram">SM</div>
+            <h3>SkyMap Geospatial</h3>
+            <div class="meta"><span class="cat">GIS &amp; Surveying</span><span class="loc">· Munich, DE</span></div>
+            <p>High-resolution regional LiDAR surveying and analytical topological rendering.</p>
+          </article>
+          <article class="company-card">
+            <div class="monogram">AI</div>
+            <h3>AeroIntelligence</h3>
+            <div class="meta"><span class="cat">AI Solutions</span><span class="loc">· San Francisco, US</span></div>
+            <p>Automated vision computing frameworks designed for drone-captured utility feeds.</p>
+          </article>
+          <article class="company-card">
+            <div class="monogram">HH</div>
+            <h3>Helix Hardware Co</h3>
+            <div class="meta"><span class="cat">Drone Tech</span><span class="loc">· Tokyo, JP</span></div>
+            <p>Enterprise drone airframes engineered for structural durability and payload flexibility.</p>
+          </article>
+          <article class="company-card">
+            <div class="monogram">VI</div>
+            <h3>Voltaic Energy Inspections</h3>
+            <div class="meta"><span class="cat">Services</span><span class="loc">· London, UK</span></div>
+            <p>Wind turbine and critical grid mapping utilizing autonomous payload operations.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <!-- Service tiles -->
+    <div class="section-dark section-pad">
+      <div class="container">
+        <div class="eyebrow">Services</div>
+        <h2 class="h2">Deploy certified aerial service providers</h2>
+        <div class="tiles-grid" style="margin-top:44px">
+          <a href="#" class="tile" data-goto="services">
+            <span class="icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6l9-3 9 3v12l-9 3-9-3z"/><path d="M12 3v18"/></svg></span>
+            <span><h4>Aerial Surveying</h4><div class="prov">142 Providers</div></span>
+            <span class="go">→</span>
+          </a>
+          <a href="#" class="tile" data-goto="services">
+            <span class="icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="6" width="15" height="12" rx="2"/><path d="M17 10l5-3v10l-5-3z"/></svg></span>
+            <span><h4>Drone Cinematography</h4><div class="prov">98 Providers</div></span>
+            <span class="go">→</span>
+          </a>
+          <a href="#" class="tile" data-goto="services">
+            <span class="icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12h4l3-8 4 16 3-8h6"/></svg></span>
+            <span><h4>Infrastructure Inspection</h4><div class="prov">115 Providers</div></span>
+            <span class="go">→</span>
+          </a>
+          <a href="#" class="tile" data-goto="services">
+            <span class="icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a7 7 0 017 7c0 5-7 13-7 13S5 14 5 9a7 7 0 017-7z"/><circle cx="12" cy="9" r="2.5"/></svg></span>
+            <span><h4>Agricultural Monitoring</h4><div class="prov">74 Providers</div></span>
+            <span class="go">→</span>
+          </a>
+          <a href="#" class="tile" data-goto="services">
+            <span class="icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/></svg></span>
+            <span><h4>Environmental Monitoring</h4><div class="prov">61 Providers</div></span>
+            <span class="go">→</span>
+          </a>
+          <a href="#" class="tile" data-goto="services">
+            <span class="icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7z"/></svg></span>
+            <span><h4>Search &amp; Rescue Support</h4><div class="prov">39 Providers</div></span>
+            <span class="go">→</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Professionals + Training -->
+    <div class="section-light section-pad">
+      <div class="container split-2">
+        <div>
+          <div class="eyebrow">Professionals</div>
+          <div style="margin-top:32px">
+            <article class="person-row">
+              <img src="https://i.pravatar.cc/96?img=12" alt="Marcus Vance">
+              <div>
+                <h4>Marcus Vance</h4>
+                <div class="role">Senior GIS Analyst</div>
+                <div class="spec">LiDAR Point Cloud Modelling</div>
+              </div>
+            </article>
+            <article class="person-row">
+              <img src="https://i.pravatar.cc/96?img=47" alt="Dr. Alanna Reed">
+              <div>
+                <h4>Dr. Alanna Reed</h4>
+                <div class="role">Robotics &amp; CV Researcher</div>
+                <div class="spec">Autonomous Flightpaths</div>
+              </div>
+            </article>
+            <article class="person-row">
+              <img src="https://i.pravatar.cc/96?img=59" alt="Tyler Cross">
+              <div>
+                <h4>Tyler Cross</h4>
+                <div class="role">Commercial UAS Pilot</div>
+                <div class="spec">Heavy-Payload BVLOS Operations</div>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div>
+          <div class="eyebrow">Training</div>
+          <div style="margin-top:32px">
+            <article class="course-row">
+              <div class="top"><span class="auth">Global Aviation Authority</span><span class="badge">6 Weeks</span></div>
+              <h4>Certified BVLOS Operations Masterclass</h4>
+            </article>
+            <article class="course-row">
+              <div class="top"><span class="auth">Infrastructure Academy</span><span class="badge">4 Weeks</span></div>
+              <h4>Thermal Inspection Techniques &amp; Data Pipelines</h4>
+            </article>
+            <article class="course-row">
+              <div class="top"><span class="auth">Geospatial Institute</span><span class="badge">8 Weeks</span></div>
+              <h4>GIS Mapping Integration with Machine Learning</h4>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Events -->
+    <div class="section-dark section-pad" style="background:var(--dark-900)">
+      <div class="container">
+        <div class="eyebrow">Events</div>
+        <h2 class="h2">Attend high-impact global drone industry events</h2>
+        <div class="grid-3" style="margin-top:44px">
+          <article class="event-card">
+            <div class="date-box"><span class="m">OCT</span><span class="d">14</span></div>
+            <div>
+              <div class="etype">Conference</div>
+              <h4>Global Drone Summit 2025</h4>
+              <div class="eloc">San Jose Convention Center / Online</div>
+            </div>
+          </article>
+          <article class="event-card">
+            <div class="date-box"><span class="m">NOV</span><span class="d">02</span></div>
+            <div>
+              <div class="etype">Workshop</div>
+              <h4>AI in Geospatial and Remote Sensing Workshop</h4>
+              <div class="eloc">Technical University Zurich</div>
+            </div>
+          </article>
+          <article class="event-card">
+            <div class="date-box"><span class="m">DEC</span><span class="d">08</span></div>
+            <div>
+              <div class="etype">Bootcamp</div>
+              <h4>Commercial UAS Pilot Bootcamp</h4>
+              <div class="eloc">Aviation Field Training Ground</div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA banner -->
+    <div class="cta-banner">
+      <div class="bg"></div><div class="overlay"></div>
+      <div class="cta-banner-inner">
+        <h2>Join the ecosystem shaping the future<br>of aerial technology</h2>
+        <div class="cta-row">
+          <a href="#" class="btn btn-blue" data-goto="login">Get Started Free</a>
+          <a href="#" class="btn btn-ghost-dark">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES VIEW ============ -->
+  <section class="view" data-view="services">
+    <div class="svc-hero">
+      <div class="bg"></div><div class="overlay"></div>
+      <div class="svc-hero-inner container">
+        <h1>Drone solutions for real-world needs</h1>
+        <p>Discover certified commercial drone companies, source high-performance surveying services, and partner with top-rated autonomous drone operators globally.</p>
+        <a href="#" class="btn btn-blue">Request Custom Proposal</a>
+      </div>
+    </div>
+
+    <div class="search-strip">
+      <div class="container">
+        <div class="search-row">
+          <div class="search-field">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+            <input type="text" placeholder="Search by service type, location, certification, or drone hardware...">
+          </div>
+          <button class="btn btn-blue">Search Operators</button>
+        </div>
+        <div class="pills" id="svcPills">
+          <button class="pill active">All Services</button>
+          <button class="pill">Aerial Survey</button>
+          <button class="pill">Mapping &amp; GIS</button>
+          <button class="pill">Photography</button>
+          <button class="pill">Inspection</button>
+          <button class="pill">Agriculture</button>
+          <button class="pill">Training</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-dark section-pad">
+      <div class="container">
+        <div class="eyebrow">Operational Services Catalog</div>
+        <h2 class="h2">Explore certified industrial aerial capabilities</h2>
+        <div class="grid-3" style="margin-top:44px">
+          <article class="svc-card">
+            <img src="https://images.pexels.com/photos/37143616/pexels-photo-37143616.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=440&w=780" alt="Volumetric construction scanning">
+            <div class="body">
+              <h3>Volumetric Construction Scanning</h3>
+              <div class="cat">Mapping &amp; GIS</div>
+              <p>High-precision volumetric computations and structural orthomosaic scanning tailored for heavy infrastructure developments.</p>
+              <a href="#" class="explore">Explore Service <span class="arrow">→</span></a>
+            </div>
+          </article>
+          <article class="svc-card">
+            <img src="https://images.pexels.com/photos/9893727/pexels-photo-9893727.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=440&w=780" alt="Utility grid and solar thermography">
+            <div class="body">
+              <h3>Utility Grid &amp; Solar Thermography</h3>
+              <div class="cat">Inspection</div>
+              <p>Automated thermal payload scans mapping micro-crack anomalies across utility sub-stations and regional solar assets.</p>
+              <a href="#" class="explore">Explore Service <span class="arrow">→</span></a>
+            </div>
+          </article>
+          <article class="svc-card">
+            <img src="https://images.pexels.com/photos/38284565/pexels-photo-38284565.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=440&w=780" alt="Agricultural crop yield analytics">
+            <div class="body">
+              <h3>Agricultural Crop Yield Analytics</h3>
+              <div class="cat">Agriculture</div>
+              <p>Multi-spectral NDVI data pipelines designed to coordinate smart fertilization and identify early-stage botanical stress.</p>
+              <a href="#" class="explore">Explore Service <span class="arrow">→</span></a>
+            </div>
+          </article>
+          <article class="svc-card">
+            <img src="https://images.pexels.com/photos/12975477/pexels-photo-12975477.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=440&w=780" alt="Precision corridor mapping">
+            <div class="body">
+              <h3>Precision Corridor Mapping</h3>
+              <div class="cat">Mapping &amp; GIS</div>
+              <p>Rapid LiDAR point-cloud captures across complex railway corridors and high-voltage transmission assets.</p>
+              <a href="#" class="explore">Explore Service <span class="arrow">→</span></a>
+            </div>
+          </article>
+          <article class="svc-card">
+            <img src="https://images.pexels.com/photos/744347/pexels-photo-744347.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=440&w=780" alt="BVLOS wind turbine diagnostics">
+            <div class="body">
+              <h3>BVLOS Wind Turbine Diagnostics</h3>
+              <div class="cat">Inspection</div>
+              <p>Long-range BVLOS aerial inspections scanning critical composite fatigue on offshore wind turbines.</p>
+              <a href="#" class="explore">Explore Service <span class="arrow">→</span></a>
+            </div>
+          </article>
+          <article class="svc-card">
+            <img src="https://images.pexels.com/photos/13310714/pexels-photo-13310714.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=440&w=780" alt="Cinematic commercial capture">
+            <div class="body">
+              <h3>Cinematic Commercial Capture</h3>
+              <div class="cat">Photography</div>
+              <p>Ultra-high resolution aerial cinematography utilizing heavy-payload heavy-lift cinema gimbal systems.</p>
+              <a href="#" class="explore">Explore Service <span class="arrow">→</span></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-dark-alt section-pad">
+      <div class="container">
+        <div class="eyebrow center">Workflow Integration</div>
+        <h2 class="h2" style="text-align:center">Direct coordination, simplified</h2>
+        <div class="steps-grid">
+          <div class="step">
+            <div class="num-row"><span class="num">01</span><span class="line"></span></div>
+            <h4>Discover Solutions</h4>
+            <p>Browse a fully indexed catalog of global certified commercial service providers.</p>
+          </div>
+          <div class="step">
+            <div class="num-row"><span class="num">02</span><span class="line"></span></div>
+            <h4>Connect Direct</h4>
+            <p>Coordinate operations details, payload specifications, and regulatory frameworks direct.</p>
+          </div>
+          <div class="step">
+            <div class="num-row"><span class="num">03</span><span class="line"></span></div>
+            <h4>Deploy Safely</h4>
+            <p>Initiate mission-critical deployments under compliant flight authorities and workflows.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-dark section-pad">
+      <div class="container">
+        <div class="eyebrow">Vetted Industry Partners</div>
+        <h2 class="h2">Connect with verified commercial operators</h2>
+        <div class="grid-3" style="margin-top:44px">
+          <article class="partner-card">
+            <div class="top">
+              <div class="monogram dark">AE</div>
+              <div>
+                <h3>AeroScan Global</h3>
+                <div class="tag">Infrastructure Diagnostics</div>
+              </div>
+            </div>
+            <p>High-fidelity mapping and structural asset modeling across Europe.</p>
+            <div class="foot">
+              <span class="rating">Rating: 4.9 (124 Jobs)</span>
+              <a href="#" class="link-blue">View Profile</a>
+            </div>
+          </article>
+          <article class="partner-card">
+            <div class="top">
+              <div class="monogram dark">OM</div>
+              <div>
+                <h3>OmniGeospatial</h3>
+                <div class="tag">High-Accuracy LiDAR &amp; GIS</div>
+              </div>
+            </div>
+            <p>Sub-centimeter topography scanning for heavy transport corridors.</p>
+            <div class="foot">
+              <span class="rating">Rating: 5.0 (88 Jobs)</span>
+              <a href="#" class="link-blue">View Profile</a>
+            </div>
+          </article>
+          <article class="partner-card">
+            <div class="top">
+              <div class="monogram dark">TE</div>
+              <div>
+                <h3>TerraAgri Systems</h3>
+                <div class="tag">Autonomous Agriculture</div>
+              </div>
+            </div>
+            <p>Wide-area NDVI surveys and custom aerial drone spraying programs.</p>
+            <div class="foot">
+              <span class="rating">Rating: 4.8 (112 Jobs)</span>
+              <a href="#" class="link-blue">View Profile</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="svc-cta">
+      <div class="bg"></div>
+      <div class="svc-cta-inner">
+        <h2>Have a specific mapping or diagnostic project in mind?</h2>
+        <a href="#" class="btn btn-blue">Connect with a Provider</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TRAINING VIEW ============ -->
+  <section class="view" data-view="training">
+    <div class="trn-hero">
+      <div class="bg"></div><div class="overlay"></div>
+      <div class="trn-hero-inner container">
+        <h1>Build skills for the drone industry</h1>
+        <p>Advance your technical credentials. Earn specialized industry certifications across thermal analysis, ML orthophoto mapping, and long-range BVLOS flightpaths.</p>
+      </div>
+    </div>
+
+    <div class="tabs-strip">
+      <div class="container">
+        <div class="tabs" id="trnTabs">
+          <button class="tab active">All Classes</button>
+          <button class="tab">Beginner Programs</button>
+          <button class="tab">Professional Pilot</button>
+          <button class="tab">Advanced Analysis</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-dark section-pad">
+      <div class="container">
+        <div class="eyebrow">Flagship Specialization</div>
+        <h2 class="h2">Advance to long-range commercial operations</h2>
+        <div class="flagship">
+          <img src="https://images.pexels.com/photos/38800708/pexels-photo-38800708.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=640&w=900" alt="Heavy payload BVLOS field operations">
+          <div class="body">
+            <div class="top">
+              <span class="auth">Global Aviation Authority</span>
+              <span class="badge dark">6 Weeks</span>
+            </div>
+            <h3>Heavy-Payload BVLOS Operations Masterclass</h3>
+            <p>Achieve deep competencies in managing beyond visual line-of-sight flightpaths, long-distance telemetry safety regulations, and payload optimization guidelines.</p>
+            <div class="cta-row">
+              <a href="#" class="btn btn-blue">Enroll In Program</a>
+              <a href="#" class="pdf">Download Curriculum PDF</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-dark section-pad" style="padding-top:0">
+      <div class="container">
+        <div class="eyebrow">All Available Curriculums</div>
+        <h2 class="h2">Select your technical certification path</h2>
+        <div class="grid-2" style="margin-top:44px">
+          <article class="course-card">
+            <img src="https://images.pexels.com/photos/35326927/pexels-photo-35326927.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=420&w=420" alt="GIS mapping course">
+            <div class="body">
+              <div class="top"><span class="auth">Geospatial Institute</span><span class="badge dark">8 Weeks</span></div>
+              <h3>GIS Mapping Integration &amp; ML Pipelines</h3>
+              <p>Integrate multi-spectral LiDAR data with computer vision classification pipelines to map forest inventory and erosion anomalies.</p>
+              <a href="#" class="link-blue details">View Course Details →</a>
+            </div>
+          </article>
+          <article class="course-card">
+            <img src="https://images.pexels.com/photos/33971201/pexels-photo-33971201.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=420&w=420" alt="Thermal inspection course">
+            <div class="body">
+              <div class="top"><span class="auth">Infrastructure Academy</span><span class="badge dark">4 Weeks</span></div>
+              <h3>Thermal Inspection Diagnostics</h3>
+              <p>Master radiometric thermal sensors, capture procedures, and analytic report generation for industrial utilities.</p>
+              <a href="#" class="link-blue details">View Course Details →</a>
+            </div>
+          </article>
+          <article class="course-card">
+            <img src="https://images.pexels.com/photos/3722738/pexels-photo-3722738.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=420&w=420" alt="Commercial UAS flight course">
+            <div class="body">
+              <div class="top"><span class="auth">Pilot Training School</span><span class="badge dark">2 Weeks</span></div>
+              <h3>Introduction to Commercial UAS Flight</h3>
+              <p>Hands-on flight preparation, hardware check procedures, spatial orientation training, and Part 107 prep modules.</p>
+              <a href="#" class="link-blue details">View Course Details →</a>
+            </div>
+          </article>
+          <article class="course-card">
+            <img src="https://images.pexels.com/photos/13310692/pexels-photo-13310692.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=420&w=420" alt="Multi-sensor payload course">
+            <div class="body">
+              <div class="top"><span class="auth">Hardware Robotics Lab</span><span class="badge dark">5 Weeks</span></div>
+              <h3>Multi-Sensor Payload System Architecture</h3>
+              <p>Deconstruct modular gimbals, design payload triggers, and align hardware triggers with external GIS data clocks.</p>
+              <a href="#" class="link-blue details">View Course Details →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-dark-alt section-pad">
+      <div class="container">
+        <div class="eyebrow center">Training Roadmap</div>
+        <h2 class="h2" style="text-align:center">How your certification journey proceeds</h2>
+        <div class="steps-grid five">
+          <div class="step">
+            <div class="num-row"><span class="num">01</span><span class="line"></span></div>
+            <h4>Explore</h4>
+            <p>Select a specialized aerial trajectory aligned with your commercial goals.</p>
+          </div>
+          <div class="step">
+            <div class="num-row"><span class="num">02</span><span class="line"></span></div>
+            <h4>Enroll</h4>
+            <p>Unlock premium lecture material, simulator tests, and technical guides.</p>
+          </div>
+          <div class="step">
+            <div class="num-row"><span class="num">03</span><span class="line"></span></div>
+            <h4>Learn</h4>
+            <p>Collaborate via weekly live diagnostics led by experienced flight commanders.</p>
+          </div>
+          <div class="step">
+            <div class="num-row"><span class="num">04</span><span class="line"></span></div>
+            <h4>Practice</h4>
+            <p>Demonstrate technical command of payload sensors under flight simulations.</p>
+          </div>
+          <div class="step">
+            <div class="num-row"><span class="num">05</span><span class="line"></span></div>
+            <h4>Complete</h4>
+            <p>Attain professional certifications acknowledged by global aviation networks.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="trn-cta">
+      <div class="trn-cta-inner">
+        <h2>Ready to scale your commercial flight qualifications?</h2>
+        <p>Join thousands of certified professionals mapping infrastructures and executing BVLOS flights safely today.</p>
+        <div class="cta-row">
+          <a href="#" class="btn btn-blue">Enroll in a Course</a>
+          <a href="#" class="btn btn-outline-dark">Talk with a Representative</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-cols">
+        <div>
+          <h5>Platform</h5>
+          <ul>
+            <li><a href="#">Ecosystem Directory</a></li>
+            <li><a href="#">Hardware Catalog</a></li>
+            <li><a href="#">AI Integration</a></li>
+            <li><a href="#">API &amp; Developer Program</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Training</h5>
+          <ul>
+            <li><a href="#">Certified Pilot Programs</a></li>
+            <li><a href="#">GIS Survey Training</a></li>
+            <li><a href="#">Automation Courses</a></li>
+            <li><a href="#">Enterprise Licensing</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Community</h5>
+          <ul>
+            <li><a href="#">Annual Industry Summit</a></li>
+            <li><a href="#">Forums &amp; Discussions</a></li>
+            <li><a href="#">Operator Directory</a></li>
+            <li><a href="#">Global Chapters</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Company</h5>
+          <ul>
+            <li><a href="#">About DroneTV</a></li>
+            <li><a href="#">Ecosystem Pricing</a></li>
+            <li><a href="#">Our Media Partners</a></li>
+            <li><a href="#">Careers &amp; Press Room</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Legal</h5>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms &amp; Conditions</a></li>
+            <li><a href="#">Data Usage Compliance</a></li>
+            <li><a href="#">FAA Waiver Guides</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="left">
+          <span class="logo">DRONETV</span>
+          <span class="copy">© 2025 DroneTV Inc. All rights reserved.</span>
+        </div>
+        <div class="socials">
+          <a href="#" aria-label="Facebook"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M13 22v-8h3l.5-4H13V7.5c0-1.1.3-1.5 1.6-1.5H16.5V2.2C15.9 2.1 14.8 2 13.9 2 10.9 2 9 3.7 9 6.9V10H6v4h3v8h4z"/></svg></a>
+          <a href="#" aria-label="Twitter"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M22 5.9c-.7.3-1.5.6-2.3.7.8-.5 1.5-1.3 1.8-2.3-.8.5-1.7.8-2.6 1a4.1 4.1 0 00-7 3.7A11.7 11.7 0 013.5 4.7a4.1 4.1 0 001.3 5.5c-.7 0-1.3-.2-1.9-.5v.1c0 2 1.4 3.7 3.3 4a4.2 4.2 0 01-1.9.1 4.1 4.1 0 003.9 2.9A8.3 8.3 0 012 18.6a11.7 11.7 0 006.3 1.8c7.5 0 11.7-6.3 11.7-11.7v-.5c.8-.6 1.5-1.3 2-2.2z"/></svg></a>
+          <a href="#" aria-label="LinkedIn"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M6.5 8.5H3V21h3.5V8.5zM4.7 7A2.1 2.1 0 104.8 2.8 2.1 2.1 0 004.7 7zM21 13.4c0-3.2-1.7-4.7-4-4.7a3.5 3.5 0 00-3.1 1.7V8.5H10.4V21H14v-6.6c0-1.6.8-2.5 2-2.5s1.7.9 1.7 2.5V21H21v-7.6z"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M21.6 7.2a2.5 2.5 0 00-1.8-1.8C18.2 5 12 5 12 5s-6.2 0-7.8.4A2.5 2.5 0 002.4 7.2 26 26 0 002 12a26 26 0 00.4 4.8 2.5 2.5 0 001.8 1.8C5.8 19 12 19 12 19s6.2 0 7.8-.4a2.5 2.5 0 001.8-1.8A26 26 0 0022 12a26 26 0 00-.4-4.8zM10 15.2V8.8L15.5 12 10 15.2z"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<!-- =================== LOGIN VIEW =================== -->
+<div class="view" data-view="login">
+  <div class="login-page">
+    <div class="login-visual">
+      <div class="bg"></div><div class="overlay"></div>
+      <a href="#" class="logo" data-goto="home">DRONETV <span class="hub">HUB</span></a>
+      <div class="bottom">
+        <h2>The Drone Ecosystem, Connected</h2>
+        <p>Enter the central interface where hardware developers, analytic algorithms, and licensed pilots align workflow standards globally.</p>
+      </div>
+    </div>
+    <div class="login-form-col">
+      <form class="login-form" id="loginForm">
+        <h1>Welcome back</h1>
+        <p class="sub">Access your personalized flight maps and diagnostic credentials.</p>
+        <div class="field">
+          <label for="email">Aviation E-mail Address</label>
+          <input type="email" id="email" value="pilot@dronetv.com" autocomplete="email">
+        </div>
+        <div class="field">
+          <div class="lbl-row">
+            <label for="password">Password</label>
+            <a href="#" class="link-blue" style="font-size:12.5px">Forgot?</a>
+          </div>
+          <input type="password" id="password" value="dronetvhub2025" autocomplete="current-password" style="border-color:var(--blue)">
+        </div>
+        <label class="check-row">
+          <input type="checkbox" checked>
+          Keep my terminal authenticated
+        </label>
+        <button type="submit" class="btn btn-blue">Login to Hub Terminal</button>
+        <a href="#" class="guest" data-goto="home">Continue as guest operator</a>
+        <div class="login-divider"></div>
+        <div class="signup-row">New to the ecosystem? <a href="#" class="link-blue">Sign up today</a></div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- =================== DASHBOARD VIEW =================== -->
+<div class="view" data-view="dashboard">
+  <div class="dash">
+    <aside class="dash-side">
+      <a href="#" class="logo" data-goto="home">DRONETV <span class="hub">HUB</span></a>
+      <nav class="dash-nav">
+        <a href="#" class="active">Overview</a>
+        <a href="#">My Courses</a>
+        <a href="#">Saved Content</a>
+        <a href="#">Companies</a>
+        <a href="#">Events</a>
+        <a href="#">Certifications</a>
+      </nav>
+      <div class="spacer"></div>
+      <div class="dash-foot">
+        <a href="#">Profile</a>
+        <a href="#">Settings</a>
+        <a href="#" data-goto="home">Logout</a>
+      </div>
+    </aside>
+    <div class="dash-main">
+      <div class="dash-top">
+        <span class="srch">SEARCH</span>
+        <span class="user">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="#eab308"><path d="M12 22a2.5 2.5 0 002.4-2h-4.8a2.5 2.5 0 002.4 2zm7-6v-5a7 7 0 00-5-6.7V4a2 2 0 10-4 0v.3A7 7 0 005 11v5l-2 2v1h18v-1l-2-2z"/></svg>
+          AKSHITA
+        </span>
+      </div>
+      <div class="dash-body">
+        <h1>Good Morning, Akshita.</h1>
+        <p class="sub">Continue where you left off.</p>
+
+        <div class="continue-card">
+          <div>
+            <div class="l1">Continue Learning</div>
+            <div class="l2">Professional Drone Operations</div>
+            <div class="l3">Flight Planning Fundamentals</div>
+            <div class="prog-row">
+              <div class="prog-track"><div class="prog-fill"></div></div>
+              <span class="prog-pct">68%</span>
+            </div>
+          </div>
+          <button class="btn-teal">Continue Learning</button>
+        </div>
+
+        <h2 class="dash-h2">My Courses</h2>
+        <div class="dash-courses">
+          <div class="dash-course">Professional Drone Operations</div>
+          <div class="dash-course"></div>
+          <div class="dash-course"></div>
+        </div>
+
+        <div class="dash-bottom">
+          <div>
+            <h2 class="dash-h2" style="margin-top:0">Upcoming Events</h2>
+            <div class="dash-event">
+              <h4>Drone Technology Expo</h4>
+              <div class="meta">18 Sep · Dehradun</div>
+              <a href="#">View Event →</a>
+            </div>
+            <div class="dash-event">
+              <h4>GIS &amp; Mapping Workshop</h4>
+              <div class="meta">24 Sep · Online</div>
+              <a href="#">View Event →</a>
+            </div>
+          </div>
+          <div>
+            <h2 class="dash-h2" style="margin-top:0">Your Activity</h2>
+            <div class="activity-list">
+              <div class="activity-row"><span>Saved Companies</span><span>04</span></div>
+              <div class="activity-row"><span>Courses</span><span>02</span></div>
+              <div class="activity-row"><span>Saved Content</span><span>08</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="js/router.js" defer></script>
+<script src="js/ui.js" defer></script>
+<script src="js/app.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+/* ============================================================
+   COMPONENTS — reusable UI building blocks
+   ============================================================ */
+
+/* ---------- Logo ---------- */
+.logo{display:flex;align-items:center;gap:8px;font-weight:800;letter-spacing:.06em;font-size:17px;color:#fff;white-space:nowrap}
+.logo .hub{background:var(--blue);color:#fff;font-size:9px;font-weight:700;letter-spacing:.08em;padding:2px 7px;border-radius:3px;transform:translateY(1px)}
+
+/* ---------- Eyebrow label ---------- */
+.eyebrow{display:flex;align-items:center;gap:8px;font-size:var(--fs-tiny);font-weight:700;letter-spacing:.14em;text-transform:uppercase}
+.eyebrow::before{content:"";width:8px;height:8px;background:var(--blue);flex:0 0 auto}
+.section-light .eyebrow::before{background:var(--text-dark)}
+.section-dark .eyebrow{color:#fff}
+.section-light .eyebrow{color:var(--text-dark)}
+.eyebrow.center{justify-content:center}
+
+/* ---------- Section heading ---------- */
+.h2{font-size:var(--fs-h2);font-weight:800;letter-spacing:-.02em;line-height:1.2;margin-top:14px}
+
+/* ---------- Buttons ---------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-weight:600;font-size:13px;padding:11px 20px;border-radius:var(--radius-sm);transition:background var(--dur),border-color var(--dur),color var(--dur),transform var(--dur);line-height:1.2}
+.btn:active{transform:scale(.97)}
+.btn-blue{background:var(--blue);color:#fff}
+.btn-blue:hover{background:var(--blue-hover)}
+.btn-ghost-dark{background:rgba(255,255,255,.04);color:#fff;border:1px solid rgba(255,255,255,.25)}
+.btn-ghost-dark:hover{border-color:rgba(255,255,255,.5)}
+.btn-ghost-light{background:#fff;color:var(--text-dark);border:1px solid var(--light-border)}
+.btn-outline-dark{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.3)}
+.btn-outline-dark:hover{border-color:rgba(255,255,255,.6)}
+
+.link-blue{color:var(--blue-light);font-weight:600;font-size:13px}
+.link-blue:hover{text-decoration:underline}
+.arrow{font-weight:600}
+
+/* ---------- Badges & monograms ---------- */
+.badge{font-size:10px;font-weight:700;letter-spacing:.06em;background:var(--light-bg);border:1px solid var(--light-border);border-radius:3px;padding:3px 8px;white-space:nowrap}
+.badge.dark{background:var(--dark-600);border-color:var(--dark-border-2);color:#fff}
+.monogram{width:44px;height:44px;border-radius:var(--radius-sm);background:var(--light-bg);border:1px solid var(--light-border);display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;color:var(--text-dark)}
+.monogram.dark{background:var(--dark-600);border-color:var(--dark-border-2);color:#fff}
+
+/* ---------- Navbar ---------- */
+.navbar{background:var(--dark-850);border-bottom:1px solid var(--dark-border);position:relative;z-index:50}
+.navbar-inner{max-width:var(--container);margin:0 auto;padding:0 40px;height:var(--nav-h);display:flex;align-items:center;gap:24px}
+.nav-links{display:flex;align-items:center;gap:6px;margin:0 auto;list-style:none}
+.nav-links a{color:var(--text-on-dark-dim);font-size:13px;font-weight:500;padding:8px 12px;border-radius:var(--radius-sm);transition:color .15s}
+.nav-links a:hover{color:#fff}
+.nav-links a.active{color:#fff;font-weight:600}
+.nav-right{display:flex;align-items:center;gap:10px}
+.nav-search{color:var(--text-on-dark-dim);display:flex;align-items:center;padding:8px;transition:color .15s}
+.nav-search:hover{color:#fff}
+.nav-login{color:#fff;font-size:13px;font-weight:500;padding:8px 12px}
+.nav-join{background:var(--blue);color:#fff;font-size:13px;font-weight:600;padding:9px 16px;border-radius:var(--radius-sm);transition:background .15s}
+.nav-join:hover{background:var(--blue-hover)}
+.nav-burger{display:none;color:#fff;font-size:22px;padding:6px 10px}
+
+/* ---------- Footer ---------- */
+.footer{background:var(--dark-900);color:#fff;border-top:1px solid var(--dark-border)}
+.footer-cols{display:grid;grid-template-columns:repeat(5,1fr);gap:32px;padding:72px 0 56px}
+.footer h5{font-size:var(--fs-tiny);font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#fff}
+.footer ul{list-style:none;margin-top:18px}
+.footer ul li + li{margin-top:10px}
+.footer ul a{font-size:13px;color:var(--text-on-dark-dim);transition:color .15s}
+.footer ul a:hover{color:#fff}
+.footer-bottom{border-top:1px solid var(--dark-border);padding:22px 0;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.footer-bottom .left{display:flex;align-items:center;gap:14px}
+.footer-bottom .logo{font-size:14px}
+.footer-bottom .copy{font-size:12px;color:var(--text-on-dark-dim)}
+.socials{display:flex;gap:8px}
+.socials a{width:30px;height:30px;border:1px solid var(--dark-border-2);border-radius:var(--radius-sm);display:flex;align-items:center;justify-content:center;color:var(--text-on-dark-dim);transition:color .15s,border-color .15s}
+.socials a:hover{color:#fff;border-color:rgba(255,255,255,.35)}
+
+/* ---------- Numbered steps (Services + Training) ---------- */
+.steps-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;margin-top:56px}
+.steps-grid.five{grid-template-columns:repeat(5,1fr);gap:28px}
+.step .num-row{display:flex;align-items:center;gap:16px}
+.step .num{width:40px;height:40px;flex:0 0 auto;border-radius:50%;border:1.5px solid var(--blue);color:#fff;font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center;background:var(--dark-850)}
+.step .line{height:1px;background:var(--dark-border-2);flex:1}
+.step h4{margin-top:22px;font-size:16px;font-weight:700;color:#fff}
+.step p{margin-top:8px;font-size:12.5px;color:var(--text-on-dark-dim);line-height:1.6}

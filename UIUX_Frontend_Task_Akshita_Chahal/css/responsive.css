@@ -1,0 +1,55 @@
+/* ============================================================
+   RESPONSIVE — tablet & mobile adaptations
+   ============================================================ */
+
+/* ---------- Tablet ---------- */
+@media (max-width:1080px){
+  :root{--fs-h1:42px}
+  .container,.navbar-inner{padding-left:28px;padding-right:28px}
+  .grid-4{grid-template-columns:repeat(2,1fr)}
+  .featured-grid{grid-template-columns:1fr;gap:40px}
+  .steps-grid.five{grid-template-columns:repeat(3,1fr);row-gap:40px}
+  .flagship{grid-template-columns:1fr}
+  .flagship img{max-height:320px}
+  .grid-2{grid-template-columns:1fr}
+  .dash{grid-template-columns:210px 1fr}
+}
+
+/* ---------- Small tablet / large phone ---------- */
+@media (max-width:860px){
+  :root{--fs-h1:36px;--fs-h2:26px}
+  .nav-links{display:none}
+  .nav-burger{display:block}
+  .nav-links.open{display:flex;position:absolute;top:var(--nav-h);left:0;right:0;flex-direction:column;align-items:stretch;background:var(--dark-850);border-bottom:1px solid var(--dark-border);padding:12px 20px;gap:2px;z-index:60}
+  .grid-3,.tiles-grid{grid-template-columns:1fr 1fr}
+  .split-2{grid-template-columns:1fr;gap:56px}
+  .hero-stats-grid{grid-template-columns:repeat(2,1fr);row-gap:28px}
+  .steps-grid{grid-template-columns:1fr}
+  .steps-grid.five{grid-template-columns:1fr 1fr}
+  .footer-cols{grid-template-columns:repeat(2,1fr)}
+  .login-page{grid-template-columns:1fr}
+  .login-visual{min-height:340px}
+  .dash{grid-template-columns:1fr}
+  .dash-side{flex-direction:row;align-items:center;gap:8px;overflow-x:auto;padding:16px 20px;border-right:none;border-bottom:1px solid var(--dark-border)}
+  .dash-nav{margin-top:0;flex-direction:row}
+  .dash-nav a,.dash-foot a{font-size:11px;padding:8px}
+  .dash-foot{flex-direction:row;padding-bottom:0}
+  .dash-courses{grid-template-columns:1fr}
+  .dash-bottom{grid-template-columns:1fr;gap:48px}
+  .continue-card{grid-template-columns:1fr;align-items:start}
+  .svc-hero h1,.trn-hero h1{font-size:34px}
+  .course-card{grid-template-columns:1fr}
+  .course-card img{max-height:200px}
+}
+
+/* ---------- Phone ---------- */
+@media (max-width:560px){
+  .container,.navbar-inner{padding-left:18px;padding-right:18px}
+  .grid-3,.grid-4,.tiles-grid{grid-template-columns:1fr}
+  .steps-grid.five{grid-template-columns:1fr}
+  .hero-stats-grid{grid-template-columns:1fr 1fr}
+  .search-row{flex-direction:column}
+  .side-item{grid-template-columns:100px 1fr}
+  .section-pad{padding:64px 0}
+  .nav-login{display:none}
+}
